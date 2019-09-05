@@ -17,4 +17,6 @@ public interface ParcelMapper {
 	void updateParcel(@Param("id")String id,@Param("parcel")Parcel parcel);
 
 	void deleteParcel(@Param("id")String id);
+
+	void updateStatus(@Param("parcel")Parcel parcel);
 }

@@ -10,6 +10,10 @@
         insert into parcel(id,name,phone,weight) values(#{parcel.id},#{parcel.name},#{parcel.phone},#{parcel.weight});
     </insert>
     
+    <update id="updateStatus">
+        update parcel set status = '已预约',date = #{parcel.date} where id = #{parcel.id};
+    </update>
+    
     <update id="updateParcel">
         update parcel set id = #{parcel.id},name =#{parcel.name},phone = #{parcel.phone},weight = #{parcel.weight} where id = #{id};
     </update>
