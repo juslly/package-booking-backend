@@ -7,7 +7,7 @@
     
     
     <insert id="addParcel">
-        insert into parcel values(#{parcel.id},#{parcel.name},#{parcel.phone},#{parcel.weight});
+        insert into parcel(id,name,phone,weight) values(#{parcel.id},#{parcel.name},#{parcel.phone},#{parcel.weight});
     </insert>
     
     <update id="updateParcel">
